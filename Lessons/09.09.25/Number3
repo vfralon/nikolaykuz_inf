@@ -1,0 +1,13 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    int a;
+    int b;
+    std::cin >> a >> b;
+    int gip;
+    gip = a*a+b*b;
+    int gipp;
+    gipp = pow(gip, 0.5);
+    std::cout << gipp;
+}

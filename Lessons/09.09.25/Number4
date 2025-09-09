@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    int s = 109;
+    int v;
+    int t;
+    std::cin >> v >> t;
+    int otm;
+    otm = (v * t) % s;
+    std::cout << otm;
+}
