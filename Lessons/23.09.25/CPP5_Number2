@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cstdlib>
+
+int main() {
+    int r;
+    int cht = 0;
+    int ncht = 0;
+    std::cout << "Размер массива?" << "\n";
+    std::cin >> r;
+    int mas[r];
+    for (int i = 0; i < r; i++) {
+        mas[i] = rand()%10;
+        if (mas[i] % 2 == 0) {
+            cht++; }
+        else {
+            ncht++; }        
+    }
+    std::cout << "Чётных:" << cht << " " << "Нечётных:" << ncht;
+}
