@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cstdlib>  
+#include <ctime>   
+using namespace std;
+
+int main() {
+    int r;
+    cin >> r; 
+
+    double *mas = nullptr;        
+    mas = new double[r];          
+    
+    srand(time(nullptr));   
+    
+    double sr = 0;              
+
+    for (int i = 0; i < r; i++) {
+        mas[i] = rand() % 10;    
+        sr += mas[i];             
+    }
+
+    cout << endl << sr << endl;   
+
+    delete[] mas;                
+    mas = nullptr;
+}

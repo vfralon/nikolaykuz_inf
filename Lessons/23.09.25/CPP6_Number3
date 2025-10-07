@@ -35,5 +35,4 @@ int main() {
             std::cout << pole[i][j];
         std::cout << std::endl;
     }
-
 }

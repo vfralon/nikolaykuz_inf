@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n; 
+
+    double *p = nullptr;
+    p = new double;
+    *p = n;
+    double **pp = &p;
+    cout << **pp << endl;
+    delete p;
+    p = nullptr;
+    pp = nullptr;
+}
