@@ -32,4 +32,3 @@ int main() {
     cout << fixed << setprecision(1);
     cout << sum1 / n << " " << sum2 / n << " " << sum3 / n << endl;
 }
-
