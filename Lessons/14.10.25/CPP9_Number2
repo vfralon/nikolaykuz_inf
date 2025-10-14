@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+char low(char c) {
+    if (c >= 'A' && c <= 'Z') {
+        return c + 32;
+    }
+    return c;
+}
+
+bool casee(string s1, string s2) {
+    if (s1.length() != s2.length()) {
+        return false; 
+    }
+
+    for (size_t i = 0; i < s1.length(); i++) {
+        if (low(s1[i]) != low(s2[i])) {
+            return false;
+        }
+    }
+    return true; 
+}
+
+int main() {
+    string str1, str2;
+
+    cout << "Введите первую строку: ";
+    getline(cin, str1);
+
+    cout << "Введите вторую строку: ";
+    getline(cin, str2);
+
+    if (casee(str1, str2))
+        cout << "Строки равны(без учёта регистра)" << endl;
+    else
+        cout << "Строки не равны" << endl;
+}

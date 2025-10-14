@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+
+int stringLength(const std::string& s) {
+    int count = 0;
+    for (char c : s) count++;
+    return count;
+}
+
+int main() {
+    std::string text;
+    std::cout << "Введите строку: ";
+    std::getline(std::cin, text);
+
+    std::cout << "Длина: " << stringLength(text) << "\n";
+}
